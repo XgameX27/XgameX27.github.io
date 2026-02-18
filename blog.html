@@ -2,12 +2,13 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>KayTech Blog</title>
+  <title>Blog - KayTech</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Header -->
   <header>
-    <h1>KayTech Blog</h1>
+    <h1>KayTech</h1>
     <nav>
       <a href="index.html">Ana Sayfa</a>
       <div class="dropdown">
@@ -18,41 +19,51 @@
           <a href="cpp.html">C++</a>
           <a href="java.html">Java</a>
           <a href="go.html">Go</a>
+          <a href="mc.html">MC</a>
+        </div>
       </div>
-    </div>
       <a href="about.html">Hakkımda</a>
     </nav>
   </header>
 
-  <main>
-  <article>
-    <h2><a href="python.html">Python</a></h2>
-    <p>Yüksek seviyeli, okunabilirliği kolay bir dil. Ayrıntılar için tıkla.</p>
-  </article>
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Blog</h2>
+    <p>Yazılım dilleri ve teknoloji üzerine yazılar.</p>
+  </section>
 
-  <article>
-    <h2><a href="javascript.html">JavaScript</a></h2>
-    <p>Web'in dili. Ayrıntılar için tıkla.</p>
-  </article>
+  <!-- Öne Çıkan Yazılar -->
+  <section class="featured">
+    <div class="card">
+      <h3>Python</h3>
+      <p>Veri bilimi, yapay zeka ve otomasyonun dili.</p>
+      <a href="python.html" class="button">Devamını Oku</a>
+    </div>
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>Web’in dili, dinamik içeriklerin gücü.</p>
+      <a href="javascript.html" class="button">Devamını Oku</a>
+    </div>
+    <div class="card">
+      <h3>C++</h3>
+      <p>Performans odaklı sistem ve oyun geliştirme dili.</p>
+      <a href="cpp.html" class="button">Devamını Oku</a>
+    </div>
+    <div class="card">
+      <h3>Java</h3>
+      <p>Kurumsal yazılımların ve Android’in dili.</p>
+      <a href="java.html" class="button">Devamını Oku</a>
+    </div>
+    <div class="card">
+      <h3>Go</h3>
+      <p>Google tarafından geliştirilen modern, hızlı ve verimli dil.</p>
+      <a href="go.html" class="button">Devamını Oku</a>
+    </div>
+  </section>
 
-  <article>
-    <h2><a href="cpp.html">C++</a></h2>
-    <p>Performans odaklı güçlü bir dil. Ayrıntılar için tıkla.</p>
-  </article>
-
-  <article>
-    <h2><a href="java.html">Java</a></h2>
-    <p>Kurumsal yazılımların vazgeçilmezi. Ayrıntılar için tıkla.</p>
-  </article>
-
-  <article>
-    <h2><a href="go.html">Go</a></h2>
-    <p>Google’ın hızlı ve verimli dili. Ayrıntılar için tıkla.</p>
-  </article>
-</main>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2026 KayTech</p>
+    <p>© 2026 KayTech | <a href="#">Twitter</a> | <a href="https://github.com/XgameX27">GitHub</a> | <a href="#">LinkedIn</a></p>
   </footer>
 </body>
 </html>

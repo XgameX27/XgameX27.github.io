@@ -168,3 +168,216 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+body {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #00bcd4;
+}
+header h1 { margin: 0; font-size: 2.5em; color: #00bcd4; letter-spacing: 2px; }
+
+/* Navigation */
+nav { margin-top: 10px; }
+nav a {
+  position: relative; color: #e0e0e0; margin: 0 15px;
+  text-decoration: none; font-weight: bold; transition: color 0.3s ease;
+}
+nav a::after {
+  content: ""; position: absolute; width: 0%; height: 2px; bottom: -5px; left: 0;
+  background-color: #00bcd4; transition: width 
+}
+/* Genel link ayarları */
+a {
+  color: #e0e0e0;          /* gri-beyaz ton */
+  text-decoration: none;   /* alt çizgiyi kaldır */
+  transition: color 0.3s ease;
+}
+
+/* Hover efekti */
+a:hover {
+  color: #00bcd4;          /* turkuaz accent */
+  text-decoration: none;   /* hover’da da çizgi yok */
+}
+
+/* Navigation özel */
+nav a {
+  position: relative;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Alt çizgi animasyonu */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #00bcd4;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+/* Kartlar */
+.featured {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  
+  /* Buton hizalama için flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Buton */
+a.button {
+  display: inline-block;
+  margin-top: auto; /* hep alta sabitler */
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #00bcd4, #006064);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-align: center;
+}
+
+a.button:hover {
+  background: linear-gradient(45deg, #006064, #00bcd4);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00bcd4;
+}
+/* Son Yazılar */
+.latest {
+  padding: 40px;
+  text-align: center;
+}
+.latest-container {
+  display: flex;
+  justify-content: center; /* ortalar */
+  gap: 20px;
+}
+.latest .card {
+  max-width: 300px;
+  flex: 1;
+}
+
+/* Popüler Konular */
+.topics {
+  padding: 40px;
+  text-align: center;
+}
+.topics-container {
+  display: flex;
+  justify-content: center; /* ortalar */
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.topics-container a {
+  font-size: 1.5em; /* daha büyük yazı */
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.topics-container a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+.featured h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px; /* başlık ile kartlar arasında boşluk */
+  color: #00bcd4;
+}
+/* Öne Çıkan Yazılar Başlığı */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px; /* başlık ile kartlar arasında boşluk */
+  color: #00bcd4;
+}
+
+/* Kartlar düzeni */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+}
+/* Öne Çıkan Yazılar Başlığı */
+.section-header {
+  text-align: center;
+  margin-bottom: 40px; /* başlık ile kartlar arasında boşluk */
+}
+.section-header h2 {
+  font-size: 2.2em;
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Kartlar düzeni */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+}
