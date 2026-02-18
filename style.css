@@ -53,3 +53,37 @@ footer {
   padding: 10px;
   margin-top: 20px;
 }
+/* Dropdown kapsayıcı */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* İçerik gizli */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1f1f1f;
+  min-width: 160px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00bcd4;
+  z-index: 1;
+}
+
+/* İçerikteki linkler */
+.dropdown-content a {
+  color: #e0e0e0;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #2a2a2a;
+  color: #00bcd4;
+}
+
+/* Hover olunca açılır */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
