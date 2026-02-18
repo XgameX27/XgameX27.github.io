@@ -1,65 +1,67 @@
-/* Koyu Tema */
+/* Genel Ayarlar */
 body {
-  background-color: #121212;
+  background-color: #0d0d0d;
   color: #e0e0e0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
-  background-color: #1f1f1f;
+  background-color: #111;
   padding: 20px;
   text-align: center;
+  border-bottom: 2px solid #00bcd4;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2.5em;
   color: #00bcd4;
+  letter-spacing: 2px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
+  position: relative;
   color: #e0e0e0;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #00bcd4;
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
   color: #00bcd4;
 }
 
-main {
-  padding: 20px;
+nav a:hover::after {
+  width: 100%;
 }
 
-article {
-  background-color: #1f1f1f;
-  padding: 15px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-/* Hover efekti */
-article:hover {
-  transform: scale(1.03) rotate(-1deg);
-  box-shadow: 0 0 20px #00bcd4;
-}
-
-footer {
-  background-color: #1f1f1f;
-  text-align: center;
-  padding: 10px;
-  margin-top: 20px;
-}
-/* Dropdown kapsayıcı */
+/* Dropdown Menü */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* İçerik gizli */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -70,12 +72,12 @@ footer {
   z-index: 1;
 }
 
-/* İçerikteki linkler */
 .dropdown-content a {
   color: #e0e0e0;
   padding: 10px;
   text-decoration: none;
   display: block;
+  transition: background 0.3s ease;
 }
 
 .dropdown-content a:hover {
@@ -83,37 +85,86 @@ footer {
   color: #00bcd4;
 }
 
-/* Hover olunca açılır */
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Hero Bölümü */
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(to right, #0d0d0d, #1f1f1f);
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0d0d0d, #1f1f1f);
   color: #00bcd4;
 }
 
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+/* Öne Çıkan Yazılar */
 .featured {
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
 }
 
-.featured .card {
+.card {
   background-color: #1f1f1f;
-  padding: 15px;
-  margin: 15px 0;
-  border-radius: 8px;
-  transition: 0.3s;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.featured .card:hover {
-  transform: scale(1.03);
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+}
+
+.card h3 {
+  color: #00bcd4;
+}
+
+/* Buton */
+a.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #00bcd4, #006064);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+a.button:hover {
+  background: linear-gradient(45deg, #006064, #00bcd4);
+  transform: scale(1.05);
   box-shadow: 0 0 15px #00bcd4;
 }
 
-.about-preview {
-  background-color: #2a2a2a;
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
   padding: 20px;
-  border-radius: 8px;
-  margin: 20px;
+  border-top: 2px solid #00bcd4;
+}
+
+footer a {
+  color: #00bcd4;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
