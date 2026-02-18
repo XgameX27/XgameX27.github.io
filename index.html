@@ -3,103 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KayTech</title>
+<title>Yazılım Kafası</title>
 
-
-
-<style>
-body{
-    margin:0;
-    font-family:Consolas, monospace;
-    background:#0d1117;
-    color:#00ffcc;
-}
-
-header{
-    background:#010409;
-    padding:20px;
-    text-align:center;
-    border-bottom:1px solid #00ffcc33;
-}
-
-h1{
-    margin:0;
-    font-size:40px;
-}
-
-nav{
-    margin-top:10px;
-}
-
-nav a{
-    color:white;
-    margin:0 15px;
-    text-decoration:none;
-}
-
-section{
-    padding:60px 20px;
-    text-align:center;
-}
-
-.card{
-    background:#161b22;
-    padding:25px;
-    margin:20px auto;
-    width:300px;
-    border-radius:10px;
-    box-shadow:0 0 20px #00ffcc22;
-}
-
-footer{
-    background:#010409;
-    padding:20px;
-    text-align:center;
-    margin-top:40px;
-    color:#aaa;
-}
-</style>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
-<h1>KayTech</h1>
+<div class="logo">YazılımKafası</div>
 <nav>
-
-
-<a href="#projeler">Projeler</a>
-<a href="#iletisim">İletişim</a>
+<a href="index.html">Ana Sayfa</a>
 <a href="hakkimda.html">Hakkımda</a>
-
-
 </nav>
 </header>
 
-<section id="hakkimda">
-<h2>Ben Kimim?</h2>
-<p>Yazılım, yapay zeka ve teknoloji ile uğraşan geliştirici. Birden fazla projem ve uygulamalarım bulunmaktadır şu an için her türlü mesele ile uğraşıyorum ancak ileride kendi tarzımı seçip o alanda ilerleyeceğim.</p>
-</section>
-
-<section id="projeler">
-<h2>Projeler</h2>
-
-<div class="card">
-<h3>LGS Meselesi</h3>
-<p>Hele bi geçsin o zaman görün Anyayı Konyayı</p>
+<section class="hero">
+<div class="hero-text">
+<h1>AI Solutions That Transform</h1>
+<p>Yapay zeka, oyun ve yazılım projeleri.</p>
+<button onclick="scrollToServices()">Projeler</button>
 </div>
-
 </section>
 
-<section id="iletisim">
-<h2>İletişim</h2>
-<p>Gmail: kayramert027@gmail.com</p>
+<section id="services" class="cards">
+<div class="card">AI Projeleri</div>
+<div class="card">Bot Sistemleri</div>
+<div class="card">Oyun Geliştirme</div>
 </section>
 
-<footer>
-<p>© 2026 KayTech</p>
-</footer>
-
+<script src="script.js"></script>
 </body>
-
 </html>
