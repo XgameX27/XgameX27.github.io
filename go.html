@@ -27,30 +27,154 @@
 
   <section class="hero">
     <h2>Go (Golang)</h2>
-    <p>Google tarafından geliştirilen modern, hızlı ve verimli dil.</p>
+    <p>Basitlik, performans ve eşzamanlılık odaklı modern sistem dili.</p>
   </section>
 
-  <section class="featured">
-    <div class="card">
-      <h3>Go Nedir?</h3>
-      <p>2009’da Google tarafından geliştirilen, basit sözdizimi ve güçlü concurrency desteğiyle bilinen dil.</p>
-    </div>
-    <div class="card">
-      <h3>Kullanım Alanları</h3>
-      <p>Mikroservisler, bulut tabanlı sistemler, ağ programlama, CLI araçları.</p>
-    </div>
-    <div class="card">
-      <h3>Örnek Kod</h3>
-      <pre>
-package main
-import "fmt"
+  <h2>Go (Golang)</h2>
+  <p><strong>Derlenen, statik tipli ve özellikle backend ile sistem programlama için tasarlanmış modern bir programlama dili.</strong></p>
 
-func main() {
-    fmt.Println("Merhaba KayTech!")
-}
-      </pre>
-    </div>
-  </section>
+  <h3 style="color:tomato;">Go Nedir?</h3>
+  <p>
+    Go, 2009 yılında Google mühendisleri tarafından geliştirilen
+    açık kaynaklı bir programlama dilidir.
+    Büyük ölçekli yazılım sistemlerini daha sade ve yönetilebilir hale getirmek amacıyla tasarlanmıştır.
+  </p>
+
+  <p>
+    Go dili; özellikle backend servisler, mikroservis mimarileri,
+    bulut tabanlı uygulamalar ve dağıtık sistemler için tercih edilmektedir.
+    Performans ve basitlik arasında dengeli bir yapı sunar.
+  </p>
+
+  <h3 style="color:tomato;">Temel Özellikler</h3>
+
+  <h4 style="color:DodgerBlue;">Derlenen ve Hızlı</h4>
+  <p>
+    Go derlenen bir dildir ve makine koduna çevrilir.
+    Çalıştırma performansı yüksektir.
+    Ayrıca derleme süresi oldukça hızlıdır, bu da geliştirme sürecini hızlandırır.
+  </p>
+
+  <h4 style="color:DodgerBlue;">Basit Sözdizimi</h4>
+  <p>
+    Go'nun en önemli özelliklerinden biri sade ve minimal bir tasarıma sahip olmasıdır.
+    Gereksiz karmaşadan kaçınılmıştır.
+    Öğrenme süreci C++ ve Java gibi dillere kıyasla daha hızlıdır.
+  </p>
+
+  <h4 style="color:DodgerBlue;">Statik Tip Sistemi</h4>
+  <p>
+    Go statik tipli bir dildir.
+    Değişken tipleri derleme zamanında kontrol edilir.
+    Bu durum performans ve güvenlik avantajı sağlar.
+  </p>
+
+  <h3 style="color:tomato;">Eşzamanlılık (Concurrency)</h3>
+
+  <h4 style="color:DodgerBlue;">Goroutines</h4>
+  <p>
+    Go’nun en güçlü özelliklerinden biri goroutine yapısıdır.
+    Hafif iş parçacıkları (lightweight threads) olarak düşünülebilir.
+    Aynı anda binlerce goroutine çalıştırmak mümkündür.
+  </p>
+
+  <h4 style="color:DodgerBlue;">Channels</h4>
+  <p>
+    Goroutine'ler arası iletişim channel yapıları ile sağlanır.
+    Bu model "Do not communicate by sharing memory; share memory by communicating"
+    prensibine dayanır.
+  </p>
+
+  <h3 style="color:tomato;">Temel Programlama Yapıları</h3>
+
+  <h4 style="color:DodgerBlue;">Değişkenler ve Veri Tipleri</h4>
+  <p>
+    int, float64, string, bool gibi temel veri tipleri bulunur.
+    Ayrıca struct yapısı ile özel veri tipleri oluşturulabilir.
+  </p>
+
+  <h4 style="color:DodgerBlue;">Koşullar ve Döngüler</h4>
+  <p>
+    if ve switch ile karar yapıları oluşturulur.
+    Go’da yalnızca for döngüsü vardır ancak while mantığında da kullanılabilir.
+  </p>
+
+  <h4 style="color:DodgerBlue;">Fonksiyonlar</h4>
+  <p>
+    Go fonksiyonları birden fazla değer döndürebilir.
+    Bu özellik hata yönetimini oldukça kolaylaştırır.
+  </p>
+
+  <h3 style="color:tomato;">Struct ve Interface Yapısı</h3>
+  <p>
+    Go klasik anlamda class yapısı içermez.
+    Bunun yerine struct ve interface yapıları kullanılır.
+    Composition (bileşim) yaklaşımı inheritance yerine tercih edilir.
+  </p>
+
+  <h3 style="color:tomato;">Garbage Collector</h3>
+  <p>
+    Go otomatik bellek yönetimine sahiptir.
+    Garbage collector sayesinde manuel bellek serbest bırakma işlemi gerekmez.
+    Bu durum güvenliği artırır ve geliştirmeyi kolaylaştırır.
+  </p>
+
+  <h3 style="color:tomato;">Kullanım Alanları</h3>
+
+  <h4 style="color:DodgerBlue;">Backend Geliştirme</h4>
+  <p>
+    Yüksek performanslı REST API ve mikroservisler geliştirmek için yaygın olarak kullanılır.
+  </p>
+
+  <h4 style="color:DodgerBlue;">Bulut ve DevOps</h4>
+  <p>
+    Docker ve Kubernetes gibi modern bulut teknolojileri Go ile yazılmıştır.
+    Bu nedenle DevOps alanında oldukça popülerdir.
+  </p>
+
+  <h4 style="color:DodgerBlue;">Dağıtık Sistemler</h4>
+  <p>
+    Ağ programlama ve eşzamanlı sistemler geliştirmek için idealdir.
+    Düşük gecikme ve yüksek verimlilik sağlar.
+  </p>
+
+  <h4 style="color:DodgerBlue;">CLI Araçları</h4>
+  <p>
+    Tek bir binary dosya üretmesi sayesinde
+    platform bağımsız komut satırı araçları geliştirmek için uygundur.
+  </p>
+
+  <h3 style="color:tomato;">Avantajlar ve Dezavantajlar</h3>
+
+  <h4 style="color:DodgerBlue;">Avantajlar</h4>
+  <ul>
+    <li>Basit ve temiz sözdizimi</li>
+    <li>Yüksek performans</li>
+    <li>Güçlü concurrency modeli</li>
+    <li>Hızlı derleme süresi</li>
+  </ul>
+
+  <h4 style="color:DodgerBlue;">Dezavantajlar</h4>
+  <ul>
+    <li>Generics desteği geç gelmiştir</li>
+    <li>OOP yapısı sınırlıdır</li>
+    <li>Küçük projelerde fazla güçlü olabilir</li>
+  </ul>
+
+  <h3 style="color:tomato;">Modern Yazılım Dünyasında Go</h3>
+  <p>
+    Go, özellikle mikroservis mimarisi ve bulut altyapılarında
+    standart haline gelmiştir.
+    Yüksek performanslı backend sistemleri için güçlü bir alternatiftir.
+  </p>
+
+  <h3 style="color:tomato;">Sonuç</h3>
+  <p>
+    Go; sade tasarımı, güçlü concurrency modeli ve yüksek performansı ile
+    modern backend geliştirme dünyasında önemli bir yere sahiptir.
+    Özellikle ölçeklenebilir sistemler geliştirmek isteyenler için
+    ideal bir seçimdir.
+  </p>
 
   <footer>
     <p>© 2026 KayTech | <a href="#">Twitter</a> | <a href="https://github.com/XgameX27">GitHub</a> | <a href="#">LinkedIn</a></p>
